@@ -1,4 +1,4 @@
-![Loan Default Prediction]((https://mma.prnewswire.com/media/76307/lending_club_logo.jpg?p=facebook))
+![Lending Clud Logo](lending_club_logo.jpg)
 
 
 # Lending Club Loan Default Prediction
