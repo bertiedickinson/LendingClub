@@ -14,24 +14,24 @@ This project leverages the Lending Club dataset from Kaggle, applying data clean
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [Feature Engineering](#feature-engineering)
-- [Models](#models)
+- [Modelling](#modelling)
 - [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-- [Results](#results)
+- [Result](#result)
 - [Future Work](#future-work)
 - [Acknowledgments](#acknowledgments)
 
-## Dataset
+## dataset
 
 The dataset is sourced from [Kaggle’s Lending Club dataset](https://www.kaggle.com/wordsforthewise/lending-club). It contains various features related to borrower creditworthiness, loan characteristics, and employment details. The target variable is `loan_default`, indicating whether a loan has defaulted or is at high risk.
 
-## Data Cleaning and Preprocessing
+## data cleaning and preprocessing
 
 - **Handling Missing Values**: Imputed missing values in several columns including  the 'dti' column using a Linear Regression model based on correlated features.
 - **Outlier Detection**: Developed functions to identify and optionally remove outliers based on statistical thresholds.
 - **Encoding**: Applied label encoding and one-hot encoding for categorical variables as appropriate.
 
   
-## Feature Engineering
+## feature engineering
 
 Key features for this analysis include:
 
@@ -76,7 +76,7 @@ Several new features were engineered to enhance the model's predictive capabilit
 These engineered features were designed to capture nuanced aspects of borrower behavior and financial risk, enhancing the model's ability to predict loan defaults accurately.
 
 
-## Models
+## modelling
 
 The following models were developed and tested to predict loan defaults:
 
@@ -86,19 +86,19 @@ The following models were developed and tested to predict loan defaults:
 4. **Logistic Regression**: A baseline model for more complex models to provide interpretability and comparison.
 5. **Linear Regression**: Tested for preliminary analysis, though not used in the final classification approach.
 
-## Results
+## results
 
 The XGBoost model with SMOTE balancing achieved an accuracy of ~80% and was selected as the baseline model. The neural network model (Challenger Model) is under development, with experiments focusing on reducing overfitting through hyperparameter tuning and hidden layer adjustments.
 
 Both Logistic and Linear Regression were used as baselines to provide interpretability and comparison, though they showed lower predictive performance than the XGBoost model.
 
-## Future Work
+## future work
 
 - **Model Refinement**: Further tuning of neural network parameters to optimize accuracy.
 - **Interpretability**: Implement SHAP or LIME for feature importance and model explainability.
 - **Deployment**: Deploy the model as an API using FastAPI for potential production use.
 
-## Acknowledgments
+## acknowledgments
 
 I would like to extend my heartfelt thanks to **Andrea Baroni** for his invaluable help and instruction throughout this project. His guidance has been instrumental in enhancing my understanding of the data and improving the model's performance.
 
